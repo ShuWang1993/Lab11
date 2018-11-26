@@ -42,9 +42,9 @@ variates <- function (U1, U2) {
 }
 
 set.seed(123)
-U1 <- runif(1000, 0, 1)
-U2 <- runif(1000, 0, 1)
-normal <- rnorm(1000, 0, 1)
+U1 <- runif(5000, 0, 1)
+U2 <- runif(5000, 0, 1)
+normal <- rnorm(5000, 0, 1)
 
 boxmuller <- variates(U1, U2)
   
