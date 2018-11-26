@@ -48,13 +48,13 @@ normal <- rnorm(1000, 0, 1)
 
 boxmuller <- variates(U1, U2)
   
-dataset_var %>%
+boxmuller %>%
   ggplot(aes(x = var_X)) +
   geom_histogram(color = "black", fill = "white", bins = 20) +
   geom_freqpoly(aes(x = normal),bins = 20, color = "red", lwd = 1) + 
   labs(x = "Variable X", y = "Count", title = "Variable_X VS Normal distribution")
 
-dataset_var %>%
+boxmuller %>%
   ggplot(aes(x = var_Y)) +
   geom_histogram(color = "black", fill = "white", bins = 20) +
   geom_freqpoly(aes(x = normal), bins = 20, color = "blue", lwd = 1) + 
